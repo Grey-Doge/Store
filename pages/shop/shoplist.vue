@@ -7,6 +7,7 @@
 			</view>
 		</view>
 		<view class="shop-item" v-for="item in shopList">
+			<navigator open-type="navigate" :url="['shopinfo?shops_id='+item.shops_id]" hover-class="none">
 			<view class="shop-header">
 				<view style="display: flex;align-items: center;justify-content: flex-start;">
 					<view class="shop-avatar">
@@ -19,19 +20,16 @@
 						</view>
 					</view>
 				</view>
-				<navigator open-type="navigate" :url="['shopinfo?shops_id='+item.shops_id]">
 					<view class="into-shop" >进店</view>
-				</navigator>
-				
 			</view>
+			</navigator>
 			<view class="display-item">
-				<image 	:src="item" v-for="item in item.previewimg"></image>
-				<!-- <image  src="https://img.alicdn.com/imgextra/i2/718371099/O1CN011JzNjn7SKQrb6pY_!!718371099.jpg"></image> -->
+				<block v-for="item in item.previewimg">
+					<navigator :url="['essaydetail?id='+item.id]" hover-class="none">
+					<image 	:src="item.cover"></image>
+					</navigator>
+				</block>
 			</view>
-			<!-- <view class="evaluation">
-				<text class="user-name">ABC:</text>
-				<text class="comment">拼配齐全,配件崭新,商家比较好说话!</text>
-			</view> -->
 		</view>
 		
 
@@ -51,10 +49,13 @@
 			this.refreshData();
 		},
 		onPullDownRefresh:function(){
-			uni.stopPullDownRefresh();
+			this.refreshData();
 		},
 		methods:{
 			refreshData:function(){
+				uni.showLoading({
+					title:"加载中..."
+				})
 				let that = this;
 				uni.request({
 					url:helper.webroot+'/api/shops/index',
@@ -64,6 +65,8 @@
 					success:function(res){
 						that.shopList = res.data.data;
 						console.log(that.shopList);
+						uni.hideLoading();
+						uni.stopPullDownRefresh();
 					}
 				})
 			}

@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shoplist_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./shoplist.vue?vue&type=script&lang=js& */ 34);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _shoplist_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _shoplist_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var _shoplist_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shoplist.vue?vue&type=style&index=0&lang=css& */ 36);
-/* harmony import */ var _HBuilder_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ 12);
+/* harmony import */ var _HBuilder_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ 11);
 
 
 
@@ -144,8 +144,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 var _helper = _interopRequireDefault(__webpack_require__(/*! ../../common/helper.js */ 8));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -184,9 +182,7 @@ var _helper = _interopRequireDefault(__webpack_require__(/*! ../../common/helper
 //
 //
 //
-//
-//
-var _default = { data: function data() {return { shopList: null, sellerId: null };}, onLoad: function onLoad(option) {this.refreshData();}, onPullDownRefresh: function onPullDownRefresh() {uni.stopPullDownRefresh();}, methods: { refreshData: function refreshData() {var that = this;uni.request({ url: _helper.default.webroot + '/api/shops/index', data: { seller: 1 }, success: function success(res) {that.shopList = res.data.data;console.log(that.shopList);} });} } };exports.default = _default;
+var _default = { data: function data() {return { shopList: null, sellerId: null };}, onLoad: function onLoad(option) {this.refreshData();}, onPullDownRefresh: function onPullDownRefresh() {this.refreshData();}, methods: { refreshData: function refreshData() {uni.showLoading({ title: "加载中..." });var that = this;uni.request({ url: _helper.default.webroot + '/api/shops/index', data: { seller: 1 }, success: function success(res) {that.shopList = res.data.data;console.log(that.shopList);uni.hideLoading();uni.stopPullDownRefresh();} });} } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

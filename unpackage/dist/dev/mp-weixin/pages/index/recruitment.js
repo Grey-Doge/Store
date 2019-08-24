@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _recruitment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./recruitment.vue?vue&type=script&lang=js& */ 42);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _recruitment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _recruitment_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var _recruitment_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./recruitment.vue?vue&type=style&index=0&lang=css& */ 44);
-/* harmony import */ var _HBuilder_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ 12);
+/* harmony import */ var _HBuilder_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ 11);
 
 
 
@@ -106,7 +106,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
-
 
 
 
@@ -335,10 +334,10 @@ var _helper = _interopRequireDefault(__webpack_require__(/*! ../../common/helper
 //
 //
 //
-//
 var _default = { data: function data() {return { currenttab: null, //当前选项卡索引;0:地区,1:薪资,2:时间,3:其他;
       menuStatus: false, //菜单栏状态;
       fir_currentIndex: 0, sec_currentIndex: null, thr_currentIndex: null, currentPage: 1, list: [{ name: "地区", currentIndex: -1, content: [{ name: "区域", content: [{ name: "天河区", content: [{ name: "天河客运站" }, { name: "五山" }, { name: "华师" }, { name: "林和西" }] }, { name: "越秀区", content: [{ name: "全部" }, { name: "百灵路" }, { name: "北京路" }, { name: "大德路" }, { name: "大沙头" }, { name: "德政路" }, { name: "东川" }, { name: "大学城" }] }, { name: "白云区", content: [{ name: "嘉禾望岗" }, { name: "机场北" }, { name: "永泰" }, { name: "泰和" }] }, { name: "黄浦区", content: [{ name: "全部" }, { name: "大沙地" }, { name: "黄浦区政府" }, { name: "黄浦新村" }, { name: "开发区东" }, { name: "开发区西" }, { name: "庙头" }, { name: "南岗" }, { name: "白江" }, { name: "沙村" }] }, { name: "从化区", content: [{ name: "不知道什么区" }] }, { name: "番禺区", content: [{ name: "全部" }, { name: "大学城" }, { name: "富豪山庄" }, { name: "华南" }, { name: "华南碧桂园" }, { name: "金山谷" }, { name: "洛溪" }, { name: "南村镇" }, { name: "南浦" }, { name: "祈福" }, { name: "番禺广场" }, { name: "市桥" }, { name: "大石" }] }] },
+
 
 
 

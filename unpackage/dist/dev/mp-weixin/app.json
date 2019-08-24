@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/index/recruitment",
     "pages/index/index",
     "pages/user/myinfo",
     "pages/shop/shoplist",
-    "pages/index/recruitment",
     "pages/index/searchitem/searchitem",
     "pages/demo/demo",
     "pages/shop/license",
@@ -70,6 +70,5 @@
       "desc": "获取用户周边卖场"
     }
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap3.json"
+  "usingComponents": {}
 }

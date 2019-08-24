@@ -19,8 +19,8 @@
 
 		</view>
 
-		<swiper class="swiper-area" indicator-dots="true" indicator-color="#FFFFFF" indicator-active-color="blue" autoplay="true">
-			<swiper-item @click="toEssay($event)" style="border-radius:15upx;" v-for="item in banner" :data-id="item.url" :data-classid="item.classid" :data-uid="item.uid">
+		<swiper class="swiper-area" indicator-dots="true"  indicator-active-color="#4baff5"autoplay="true">
+			<swiper-item @click="toEssay($event)" style="border-radius:15upx;"  v-for="item in banner" :data-id="item.url" :data-classid="item.classid" :data-uid="item.uid">
 					<image mode="aspectFill" :src="item.wechat_banner"></image>
 			</swiper-item>
 		</swiper>
@@ -40,30 +40,6 @@
 					</view>
 				</block>
 			</navigator>
-			<!-- <navigator open-type="navigate" url="../floors/floors?title=一"hover-class="none">
-			<view class="head-icon-item" >
-				<image src="../../static/1.png"></image>
-				<text>一楼</text>
-			</view>
-			</navigator>
-			<navigator open-type="navigate" url="../floors/floors?title=二"hover-class="none">
-			<view class="head-icon-item" >
-				<image src="../../static/2.png"></image>
-				<text>二楼</text>
-			</view>
-			</navigator>
-			<navigator open-type="navigate" url="../floors/floors?title=三"hover-class="none">
-			<view class="head-icon-item" >
-				<image src="../../static/3.png"></image>
-				<text>三楼</text>
-			</view>
-			</navigator>
-			<navigator open-type="navigate" url="../floors/floors?title=四"hover-class="none">
-			<view class="head-icon-item" >
-				<image src="../../static/4.png"></image>
-				<text>四楼</text>
-			</view>
-			</navigator> -->
 		</view>
 
 		<view class="recommend-icon">
@@ -90,39 +66,6 @@
 			
 		</view>
 
-	<!-- 	<view class="recommend-icon">
-			<navigator open-type="navigate" url="../searchItemDetail/searchItemDetail?keywords=原装电池">
-			<view class="recommend-icon-item">
-				<image src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4097148778,4035178596&fm=26&gp=0.jpg"></image>
-				<text>原装电池</text>
-			</view>
-			</navigator>
-			<navigator open-type="navigate" url="../searchItemDetail/searchItemDetail?keywords=保护套">
-			<view class="recommend-icon-item">
-				<image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=348953168,4212309502&fm=26&gp=0.jpg"></image>
-				<text>保护套</text>
-			</view>
-			</navigator>
-			<navigator open-type="navigate" url="../searchItemDetail/searchItemDetail?keywords=摄像头">
-			<view class="recommend-icon-item">
-				<image src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1694710534,274152345&fm=26&gp=0.jpg"></image>
-				<text>摄像头</text>
-			</view>
-			</navigator>
-			<navigator open-type="navigate" url="../searchItemDetail/searchItemDetail?keywords=钢化膜">
-			<view class="recommend-icon-item">
-				<image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1243710084,2365545028&fm=26&gp=0.jpg"></image>
-				<text>钢化膜</text>
-			</view>
-			</navigator>
-			<navigator open-type="navigate" url="../searchItemDetail/searchItemDetail?keywords=高清膜">
-			<view class="recommend-icon-item">
-				<image src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3335980332,2781147878&fm=26&gp=0.jpg"></image>
-				<text>高清膜</text>
-			</view>
-			</navigator>
-		</view>
- -->
 		<view class="main-body">
 			<view class="recommend-store">
 
@@ -136,13 +79,13 @@
 				<view class="recommend-store-container">
 
 					<view class="recommend-store-item" v-for="item in recommendShops" :data-id="item.shops_id" @click="toShop($event)">
-							<!-- <navigator :url="['../shop/shopinfo?shops_id='+item.shops_id]" open-type="navigate"> -->
+							
 							<image :src="item.shops_door" mode="aspectFill"></image>
 							<view class="recommend-store-storename">{{item.shops_name}}</view>
 							<view class="recommend-store-tag">
 								<text v-for="item in item.compan_tags">{{item}}</text>
 							</view>
-							<!-- </navigator> -->
+							
 					</view>
 
 				</view>
@@ -169,19 +112,16 @@
 								<view class="job-require">
 									<view class="job-require-text">
 										<block v-for="(subitem,index) in item.require_tag">
-											<text>{{subitem}}</text>
-											<!-- {{item.require_tag.length}} -->
-											<label class="separate" v-if="index < item.require_tag.length - 1">|</label>
-											<!-- 
-											<text>无经验</text><label class="separate">|</label>
-											<text>无学历</text>
-											-->
+											<text v-if="index < 3">{{subitem}}</text>
+											<label class="separate" v-if="index < 2">|</label>
 										</block>
 									</view>
 									<text class="publish-date">2019/4/25</text>
 								</view>
 								<view class="job-tag">
-									<text v-for="item in item.welfear_tag">{{item}}</text>
+									<block v-for="(subitem,index) in item.welfear_tag">
+									<text v-if="index < 3">{{subitem}}</text>
+									</block>
 								</view>
 								<view class="company">
 									<text class="company-name">{{item.companyname}}</text>
@@ -197,6 +137,9 @@
 
 			</view>
 		</view>
+	
+	
+	
 	</view>
 
 </template>
@@ -204,7 +147,6 @@
 <style>
 	.main-container {
 		padding: 0 0;
-		margin: 0 0;
 	}
 
 	.search-bar {
@@ -270,7 +212,7 @@
 
 	.swiper-area {
 		height: 250upx;
-		width: 710rpx;
+		
 		border-radius: 15upx;
 		margin-bottom: 20upx;
 		padding: 0 24rpx;
@@ -278,7 +220,7 @@
 
 	.swiper-area image {
 		height: 250upx;
-		width: 710rpx;
+		width: 100%;
 	}
 
 	.head-icon {
@@ -313,7 +255,8 @@
 	}
 
 	.recommend-icon-item {
-		font-size: 26upx;
+		font-size: 28rpx;
+		color: #333333;
 		display: flex;
 		align-items: center;
 		flex-direction: column;
@@ -328,7 +271,6 @@
 
 	.main-body {
 		background-color: rgb(242, 242, 242);
-		width: 100%;
 	}
 
 	.recommend-store {
@@ -384,12 +326,13 @@
 	}
 
 	.recommend-store-storename {
-		font-size: 28upx;
+		font-size: 28rpx;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
-		width: 250upx;
+		width: 250rpx;
 		margin: 10rpx;
+		color: #222222;
 	}
 
 	.recommend-store-tag {
@@ -402,7 +345,6 @@
 		padding: 4rpx;
 		margin: 0 10upx;
 		border: #FFD39B;
-		/* background-color:rgb(242,125,0); */
 		background-color: rgb(255,228,199);
 		color: rgb(242, 125, 0);
 	}
@@ -466,6 +408,7 @@
 
 	.publish-date {
 		color: rgb(95, 95, 95);
+		font-size: 22rpx;
 	}
 
 	.separate {
@@ -552,7 +495,8 @@
 				currentSeller:null,
 				essayList:null,
 				popular:helper.popular,
-				support:null
+				support:null,
+				tabBar:null
 			}
 		},
 		onLoad:function(options) {
@@ -715,7 +659,55 @@
 												that.support = res.data.value;
 											}
 										})
-										
+										uni.request({
+											url:helper.webroot + "api/seller/footnavigation",
+											method:"GET",
+											success:function(res){
+												console.log("导航栏");
+												console.log(res.data.data);
+												that.tabBar = res.data.data;
+												uni.setTabBarItem({
+													index:0,
+													text:that.tabBar.nav_index,
+													iconPath:that.tabBar.index_img,
+													selectedIconPath:that.tabBar.index_img_change,
+													success:function(res){
+														console.log("设置成功了!");
+														console.log(res);
+													}
+												})
+												uni.setTabBarItem({
+													index:1,
+													text:that.tabBar.nav_shop,
+													iconPath:that.tabBar.shop_img,
+													selectedIconPath:that.tabBar.shop_img_change,
+													success:function(res){
+														console.log("设置成功了!");
+														console.log(res);
+													}
+												})
+												uni.setTabBarItem({
+													index:2,
+													text:that.tabBar.nav_playground,
+													iconPath:that.tabBar.playground_img,
+													selectedIconPath:that.tabBar.playground_img_change,
+													success:function(res){
+														console.log("设置成功了!");
+														console.log(res);
+													}
+												})
+												uni.setTabBarItem({
+													index:3,
+													text:that.tabBar.nav_my,
+													iconPath:that.tabBar.my_img,
+													selectedIconPath:that.tabBar.my_img_change,
+													success:function(res){
+														console.log("设置成功了!");
+														console.log(res);
+													}
+												})
+											}
+										})
 										break;
 									}
 								}

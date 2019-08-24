@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _searchItemDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./searchItemDetail.vue?vue&type=script&lang=js& */ 78);
 /* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _searchItemDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _searchItemDetail_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 /* harmony import */ var _searchItemDetail_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./searchItemDetail.vue?vue&type=style&index=0&lang=css& */ 80);
-/* harmony import */ var _HBuilder_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ 12);
+/* harmony import */ var _HBuilder_HBuilderX_plugins_uniapp_cli_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../HBuilder/HBuilderX/plugins/uniapp-cli/node_modules/vue-loader/lib/runtime/componentNormalizer.js */ 11);
 
 
 
@@ -185,7 +185,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
 var _helper = _interopRequireDefault(__webpack_require__(/*! ../../common/helper.js */ 8));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
+//
+//
+//
 //
 //
 //
@@ -269,10 +275,7 @@ var _default = { data: function data() {return { currentTab: 0, essayList: null,
                                                                                                                                                                                            * @version 2019-07-31
                                                                                                                                                                                            * @method	切换选项卡
                                                                                                                                                                                            * */switchTab: function switchTab(obj) {var that = this;console.log(obj.currentTarget.dataset.index);that.currentTab = obj.currentTarget.dataset.index;if (that.currentTab === 0) {uni.request({ url: _helper.default.webroot + "/api/search/seachshops", method: "GET", data: { keyword: that.searchText, type: 1, page: 1 }, success: function success(res) {console.log(res);that.essayList = res.data.data;} });} else {uni.request({ url: _helper.default.webroot + "/api/search/seachshops", method: "GET", data: { keyword: that.searchText, type: 2, page: 1 }, success: function success(res) {console.log(res);that.shopList = res.data.data;} });}}, loadMore: function loadMore(res) {var that = this;console.log('触碰到底部,加载事件');console.log(res);that.bottomText = "正在加载...";uni.request({ url: _helper.default.webroot + "/api/search/seachshops", method: "GET", data: { keyword: that.searchText, type: that.currentPage + 1, page: that.currentPage }, success: function success(res) {console.log(res);if (res.data.data.length <= 0) {that.bottomText = "已无更多文章";}that.currentPage = that.currentPage + 1;} });} }, onLoad: function onLoad(option) {uni.showLoading({ title: '加载中...' });this.searchText = option.keywords;var that = this; //获取文章;
-    uni.request({
-      url: _helper.default.webroot + "/api/search/seachshops",
-      method: "GET",
-      data: {
+    uni.request({ url: _helper.default.webroot + "/api/search/seachshops", method: "GET", data: {
         keyword: that.searchText,
         type: 1,
         page: that.currentPage },

@@ -14,14 +14,14 @@
 
 			</view>
 
-			<scroll-view v-show="menuStatus" scroll-y="true" class="selectOption">
+			<view v-show="menuStatus" class="selectOption">
 				<view class="option-area">
-					<scroll-view class="condition">
+					<scroll-view class="condition" scroll-y="true" style="height: auto;">
 						<view v-for="(item,index) in list[fir_currentIndex].content" v-bind:key="index" @click="selecte(index)" class="fir" v-bind:class="{selected:index==list[fir_currentIndex].currentIndex}">
 							{{item.name}}
 						</view>
 					</scroll-view>
-					<scroll-view v-show="list[fir_currentIndex].currentIndex != -1 && fir_currentIndex == 0 ">
+					<scroll-view v-show="list[fir_currentIndex].currentIndex != -1 && fir_currentIndex == 0 " scroll-y="true" style="max-height: 400rpx;">
 						<block v-for="(item,index) in list[fir_currentIndex].content" v-bind:key="index">
 							<block v-if="index == list[fir_currentIndex].currentIndex" >
 								<view v-for="(sub_item,index) in item.content" @click="selectSec(index)" data-id='index' class="sec"
@@ -31,7 +31,7 @@
 							</block>
 						</block>
 					</scroll-view>
-					<scroll-view v-show="sec_currentIndex != null">
+					<scroll-view v-show="sec_currentIndex != null" scroll-y="true" style="max-height: 500rpx;">
 						<block v-for="(item,index) in list[fir_currentIndex].content" v-bind:key="index">
 							<block v-if="index == list[fir_currentIndex].currentIndex">
 								<block v-for="(sub_item,index) in item.content" v-bind:key="index">
@@ -51,9 +51,6 @@
 									 -->
 								</block>
 							</block>
-							<!-- <block v-for="(item,index) in list[fir_currentIndex].content[list[fir_currentIndex].currentIndex].content">
-								<view class="thr">{{item.name}}</view>
-							</block> -->
 						</block>
 
 					</scroll-view>
@@ -66,7 +63,7 @@
 						确定
 					</view>
 				</view>
-			</scroll-view>
+			</view>
 		</view>
 
 		<view class="recruitment-container" style="height: 100%;width: 100%;">
@@ -87,11 +84,13 @@
 						<text class="text_3">手机内件</text>
 					</view>
 					<view class="essay-content">
+						<view style="padding: 24rpx;border-radius: 15rpx;background-color: #F2F2F2;">
 						<view class="content">
 							<block v-if="item.content != null && item.content != '' && item.content.length > 0">
 							{{item.content}}
 							</block>
 							
+						</view>
 						</view>
 				
 					</view>
@@ -413,22 +412,24 @@
 
 		margin: 10upx 0;
 		padding: 15upx 24upx;
-
+		
 	}
 
 	.content {
 		border-radius: 15upx;
-		padding: 10upx 24upx;
 		background-color: #F2F2F2;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		display: -webkit-box;
 		-webkit-line-clamp: 3;
 		-webkit-box-orient: vertical;
+		font-size: 26rpx;
+		color:#333333;
+		
 	}
 
 	.picker-container {
-
+		border-top: 2rpx #f2f2f2 solid;
 		background-color: #FFFFFF;
 		display: flex;
 		flex-direction: column;
@@ -487,12 +488,12 @@
 	.title-name {}
 
 	.name {
-		font-weight: 450;
-		font-size: 38upx;
+		font-weight: bold;
+		font-size: 30rpx;
 	}
 
 	.publishdate {
-		font-size: 32upx;
+		font-size: 26rpx;
 	}
 
 	.essay-tag {
@@ -576,7 +577,7 @@
 		display: flex;
 		flex-direction: column;
 		max-height: 500upx;
-
+		z-index: 9999999;
 	}
 
 	.option-item {

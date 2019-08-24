@@ -257,7 +257,6 @@ page {
 	height: 35rpx;
 	width: 45rpx;
 	border-radius: 8rpx;
-	border: #7F7F7F 1rpx solid;
 	margin-right: 15rpx;
 }
 .publish-date {

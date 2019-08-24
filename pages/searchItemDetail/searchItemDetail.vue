@@ -50,23 +50,26 @@
 
 		<view class="shop-content" v-show="currentTab==1">
 			<view class="shop-item" v-for="item in shopList">
-				<view class="shop-header">
-					<view class="shop-avatar">
-						<image mode="aspectFill" :src="item.shops_logo"></image>
-					</view>
-					<view class="shop-info">
-						<text class="shop-name">{{item.shops_name}}</text>
-						<view class="shop-tag">
-							<text  v-for="item in item.compan_tags">{{item}}</text>
+				<navigator open-type="navigate" :url="['../shop/shopinfo?shops_id='+item.shops_id]" hover-class="none">
+					<view class="shop-header">
+						<view class="shop-avatar">
+							<image mode="aspectFit" :src="item.shops_logo"></image>
 						</view>
-					</view>
-					<navigator open-type="navigate" :url="['../shop/shopinfo?shops_id='+item.shops_id]" hover-class="none">
+						<view class="shop-info">
+							<text class="shop-name">{{item.shops_name}}</text>
+							<view class="shop-tag">
+								<text  v-for="item in item.compan_tags">{{item}}</text>
+							</view>
+						</view>
 						<view class="into-shop">进店</view>
-					</navigator>
-
-				</view>
+					</view>
+				</navigator>
 				<view class="display-item">
-					<image :src="item" v-for="item in item.previewimg"></image>
+					<block v-for="item in item.previewimg" >
+						<navigator :url="['../shop/essaydetail?id='+item.id]" open-type="navigate" hover-class="none">
+							<image :src="item.cover" ></image>
+						</navigator>
+					</block>
 				</view>
 			</view>
 		</view>
@@ -354,7 +357,6 @@
 		height: 35upx;
 		width: 45upx;
 		border-radius: 8upx;
-		border: #7F7F7F 1upx solid;
 		margin-right: 15upx;
 	}
 

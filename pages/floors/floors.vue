@@ -4,7 +4,7 @@
 			<view class="shop-header">
 				<view style="display: flex;align-items: center;justify-content: flex-start;">
 					<view class="shop-avatar">
-						<image mode="aspectFill" :src="item.shops_logo"></image>
+						<image mode="aspectFit" :src="item.shops_logo"></image>
 					</view>
 					<view class="shop-info">
 						<text class="shop-name">{{item.shops_name}}</text>

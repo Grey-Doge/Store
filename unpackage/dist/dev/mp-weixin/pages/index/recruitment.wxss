@@ -23,7 +23,6 @@
 }
 .content {
 	border-radius: 15rpx;
-	padding: 10rpx 24rpx;
 	background-color: #F2F2F2;
 	overflow: hidden;
 	-o-text-overflow: ellipsis;
@@ -31,9 +30,11 @@
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
+	font-size: 26rpx;
+	color:#333333;
 }
 .picker-container {
-
+	border-top: 2rpx #f2f2f2 solid;
 	background-color: #FFFFFF;
 	display: -webkit-box;
 	display: -webkit-flex;
@@ -138,11 +139,11 @@
 }
 .title-name {}
 .name {
-	font-weight: 450;
-	font-size: 38rpx;
+	font-weight: bold;
+	font-size: 30rpx;
 }
 .publishdate {
-	font-size: 32rpx;
+	font-size: 26rpx;
 }
 .essay-tag {
 	font-size: 26rpx;
@@ -254,6 +255,7 @@
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	max-height: 500rpx;
+	z-index: 9999999;
 }
 .option-item {
 
