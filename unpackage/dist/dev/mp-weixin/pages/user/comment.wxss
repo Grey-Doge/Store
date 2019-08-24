@@ -1,0 +1,209 @@
+
+.main-container{
+	padding: 0;
+	background-color: #F2F2F2;
+}
+.switch-tab {
+	background-color: #F2F2F2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 70rpx;
+	margin: 15rpx 0;
+}
+.switch-tab .btn {
+	font-size: 34rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 70rpx;
+	width: 200rpx;
+	position: relative;
+}
+.mine{
+	background-color: #4BAFF5;
+	color: #FFFFFF;
+	left: -20rpx;
+	z-index: 2;
+}
+.tome{
+	color:#4BAFF5 ;
+	background-color: #FFFFFF;
+	left: 0;
+	z-index: 1;
+}
+.mine-container,.tome-container{
+}
+.mine-item,.tome-item{
+	padding: 24rpx 24rpx;
+	background-color: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-top: 10rpx;
+}
+.mine-header,.tome-header{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.user-info{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.icon-msg image{
+	height: 50rpx;
+	width: 80rpx;
+}
+.avatar{
+	margin-right: 15rpx;
+}
+.avatar image{
+	width: 80rpx;
+	height: 80rpx;
+	border-radius: 50%;
+	-webkit-align-self:  baseline;
+	    -ms-flex-item-align:  baseline;
+	        align-self:  baseline;
+}
+.user{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+}
+.name{
+	font-size: 30rpx;
+	font-weight: 450;
+}
+.reply-time{
+	font-size: 26rpx;
+	color: #7F7F7F;
+}
+.reply{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 28rpx;
+	margin: 10rpx 0 20rpx 0;
+}
+.reply-man{
+	color: #4BAFF5;
+	width: 180rpx;
+}
+.separate{
+	margin: 0 10rpx;
+}
+.reply-content{
+	width: 350rpx;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.comment-content{
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 500rpx;
+}
+.comment,.article{
+	background-color: #F2F2F2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	border-radius: 10rpx;
+}
+.comment{
+	font-size: 28rpx;
+	padding: 15rpx 8rpx;
+	color: #7F7F7F;
+}
+.article{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.article-img{
+	padding: 15rpx;
+	width: 320rpx;
+	height: 170rpx;
+	margin-right: 15rpx;
+}
+.article-img image{
+	width: 300rpx;
+	height: 170rpx;
+	border-radius: 15rpx;
+}
+.article-title{
+	font-size: 32rpx;
+	width: 300rpx;
+	font-weight: 450;
+	overflow: hidden;
+	-webkit-line-clamp: 2; 
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+}
+

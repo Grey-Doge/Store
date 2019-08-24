@@ -1,0 +1,91 @@
+
+.main-container{
+	padding: 0;
+	background-color: #F2F2F2;
+}
+.collection-item{
+	background-color: #FFFFFF;
+}
+.shop-item {
+	background-color: #FFFFFF;
+	margin-top: 5rpx;
+}
+.shop-header {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 0 24rpx;
+	padding: 25rpx 0;
+}
+.shop-avatar {
+	height: 120rpx;
+	width: 200rpx;
+	margin-right: 40rpx;
+}
+.shop-avatar image {
+	height: 120rpx;
+	width: 200rpx;
+	border: #F2F2F2 solid 2rpx;
+	border-radius: 20rpx;
+}
+.shop-info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-self: flex-start;
+	    -ms-flex-item-align: start;
+	        align-self: flex-start;
+}
+.shop-name {
+	margin-bottom: 20rpx;
+	font-size: 34rpx;
+}
+.shop-info .shop-tag {
+
+	font-size: 28rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.shop-info .shop-tag text {
+	border-radius: 15rpx;
+	background-color: #F2F2F2;
+	color: #7F7F7F;
+	padding: 0 10rpx;
+	margin-right: 15rpx;
+}
+

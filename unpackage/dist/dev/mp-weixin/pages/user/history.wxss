@@ -1,0 +1,214 @@
+
+.main-container {
+	padding: 0;
+	background-color: #F2F2F2;
+}
+.switch-tab {
+	background-color: #F2F2F2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 60rpx;
+	margin: 15rpx 0;
+}
+.switch-tab .btn {
+	font-size: 34rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 60rpx;
+	width: 120rpx;
+	position: relative;
+}
+.shop {
+	left: 0;
+	z-index: 10;
+	color: #4BAFF5;
+	background-color: #FFFFFF;
+}
+.job {
+	left: -20rpx;
+	z-index: 11;
+	color: #4BAFF5;
+	background-color: #FFFFFF;
+}
+.btnSelected{
+	color: #FFFFFF;
+	z-index: 20;
+	background-color: #4BAFF5;
+}
+.separate {
+	color: #7F7F7F;
+	border-left: 3rpx solid #7F7F7F;
+	margin: 0 18rpx;
+}
+.recruitment-item {
+	font-size: 28rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background-color: #FFFFFF;
+	margin: 5rpx 0;
+}
+.job-info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin: 15rpx 24rpx 10rpx 24rpx;
+}
+.job-name {}
+.name {
+	font-weight: 450;
+}
+.salary {
+	color: #FF0000;
+}
+.tag {
+	margin: 0 15rpx;
+	border: #FF0000 1rpx solid;
+}
+.company-tag {
+	font-size: 26rpx;
+	color: #7F7F7F;
+	margin: 0 24rpx;
+}
+.company-welfare {
+	margin: 0 24rpx;
+}
+.company-welfare text {
+	font-size: 24rpx;
+	margin-right: 20rpx;
+	background-color: #FFE7BA;
+	color: #FFA500;
+	padding: 5rpx 8rpx;
+}
+.company-name {
+	font-size: 28rpx;
+	margin: 5rpx 24rpx 15rpx 24rpx;
+}
+.shop-item {
+	background-color: #FFFFFF;
+	margin-bottom: 5rpx;
+}
+.shop-header {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 0 24rpx;
+	padding: 25rpx 0;
+}
+.shop-avatar {
+	height: 120rpx;
+	width: 200rpx;
+	margin-right: 40rpx;
+}
+.shop-avatar image {
+	height: 120rpx;
+	width: 200rpx;
+	border: #F2F2F2 solid 2rpx;
+	border-radius: 20rpx;
+}
+.shop-info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-self: flex-start;
+	    -ms-flex-item-align: start;
+	        align-self: flex-start;
+}
+.shop-name {
+	margin-bottom: 20rpx;
+	font-size: 34rpx;
+}
+.shop-info .shop-tag {
+
+	font-size: 28rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.shop-info .shop-tag text {
+	border-radius: 15rpx;
+	background-color: #F2F2F2;
+	color: #7F7F7F;
+	padding: 0 10rpx;
+	margin-right: 15rpx;
+}
+

@@ -1,0 +1,310 @@
+
+.main-container{
+	padding: 0;
+	background-color: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	    -ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	padding: 0 24rpx;
+}
+.title,.tag,.content{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	
+	width: 100%;
+}
+.label{
+	font-size: 40rpx;
+	font-weight: bold;
+	margin-top: 30rpx;
+}
+.input-title{
+	font-size: 36rpx;
+	padding: 15rpx 38rpx;
+	background-color: #F2F2F2;
+	border-radius: 15rpx;
+	margin-top: 20rpx;
+	width: 90%;
+}
+.tag-container{
+	background-color: #F2F2F2;
+	border-radius: 15rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 10rpx 20rpx 10rpx 38rpx;
+	color: #7F7F7F;
+	margin-top: 20rpx;
+}
+.tag-container image{
+	width: 64rpx;
+	height: 64rpx;
+}
+.content-input{
+	background-color: #F2F2F2;
+	padding: 15rpx 38rpx;
+	width: 90%;
+	border-radius: 15rpx;
+	margin-top: 20rpx;
+}
+.img{
+	margin-top: 30rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+.img-container{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.img-container image{
+	height: 200rpx;
+	width: 200rpx;
+	margin: 15rpx;
+}
+.icon-selectePic{
+	width: 128rpx;
+	height: 128rpx;
+	margin: 10rpx 15rpx;
+}
+.tag-item-container{
+	background-color: #F2F2F2;
+	margin-top: 20rpx;
+	border-radius: 15rpx;
+	font-size: 32rpx;
+	padding: 35rpx 10rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	position: relative;
+	top: 0;
+	z-index: 10;
+}
+.tag-item-container text{
+	padding: 5rpx;
+	border-radius: 10rpx;
+	color: #FFFFFF;
+	margin: 10rpx;
+}
+.text_1{
+	background-color: rgb(250,146,95);
+}
+.text_2{
+	background-color: rgb(95,193,250);
+}
+.text_3{
+	background-color: rgb(250,95,153);
+}
+.submitBtn{
+	margin-top: 35rpx;
+	background-color: rgb(232,149,61);
+	color: #FFFFFF;
+	-webkit-align-self: center;
+	    -ms-flex-item-align: center;
+	        align-self: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	border-radius: 15rpx;
+	width: 65%;
+	padding: 20rpx 0;
+}
+.arrowdown{
+	-webkit-animation: arrowdown 0.5s ease forwards;
+	        animation: arrowdown 0.5s ease forwards;
+}
+.arrowup{
+	-webkit-animation: arrowup 0.5s ease forwards;
+	        animation: arrowup 0.5s ease forwards;
+}
+.fadein{
+	-webkit-animation: fadein 1s linear forwards;
+	        animation: fadein 1s linear forwards;
+}
+.fadeout{
+	-webkit-animation: fadeout 1s linear forwards;
+	        animation: fadeout 1s linear forwards;
+}
+.img-item{
+	position: relative;
+}
+.delete-pic-mask{
+	position: absolute;
+	bottom:25rpx;
+	left: 15rpx;
+	background-color: #FFFFFF;
+	height: 60rpx;
+	width: 200rpx;
+	opacity: 0.75;
+}
+.delete-icon{
+	position: absolute;
+	bottom: 25rpx;
+	left: 15rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	width: 200rpx;
+	height: 60rpx;
+}
+.delete-icon image{
+	width: 36rpx;
+	height: 36rpx;
+	margin: 0;
+}
+@-webkit-keyframes arrowdown{
+from{
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+}
+to{
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+}
+@keyframes arrowdown{
+from{
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+}
+to{
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+}
+@-webkit-keyframes arrowup{
+from{
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+to{
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+}
+}
+@keyframes arrowup{
+from{
+		-webkit-transform: rotate(0deg);
+		        transform: rotate(0deg);
+}
+to{
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+}
+}
+@-webkit-keyframes fadein{
+from{
+		opacity: 0;
+}
+to{
+		opacity: 1;
+}
+}
+@keyframes fadein{
+from{
+		opacity: 0;
+}
+to{
+		opacity: 1;
+}
+}
+@-webkit-keyframes fadeout{
+from{
+		opacity: 1;
+}
+to{
+		opacity: 0;
+}
+}
+@keyframes fadeout{
+from{
+		opacity: 1;
+}
+to{
+		opacity: 0;
+}
+}
+
+

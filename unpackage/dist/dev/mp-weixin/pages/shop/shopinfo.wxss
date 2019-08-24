@@ -1,0 +1,308 @@
+
+page {
+	background-color: #F2F2F2;
+}
+.main-container {
+	padding: 0;
+	background-color: #F2F2F2;
+}
+.shop-item {
+
+	margin: 5rpx 0 0 0;
+}
+.shop-header {
+
+	background-color: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	padding: 25rpx 24rpx;
+}
+.shop-avatar {
+	height: 120rpx;
+	width: 200rpx;
+	margin-right: 70rpx;
+}
+.shop-avatar image {
+	height: 120rpx;
+	width: 200rpx;
+	border-radius: 20rpx;
+}
+.shop-info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-self: flex-start;
+	    -ms-flex-item-align: start;
+	        align-self: flex-start;
+}
+.shop-name {
+	margin-bottom: 20rpx;
+	font-size: 34rpx;
+}
+.shop-info .shop-tag {
+
+	font-size: 28rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.shop-info .shop-tag text {
+	border-radius: 15rpx;
+	background-color: #F2F2F2;
+	color: #7F7F7F;
+	padding: 0 10rpx;
+	margin-right: 15rpx;
+}
+.into-shop {
+	padding: 10rpx;
+	border-radius: 15rpx;
+	font-size: 28rpx;
+	color: #FFFFFF;
+	background-color: #4BAFF5;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-self: flex-start;
+	    -ms-flex-item-align: start;
+	        align-self: flex-start;
+}
+.work-time,
+.address,
+.contact-number {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	height: 75rpx;
+	font-size: 30rpx;
+	background-color: #FFFFFF;
+	margin-top: 5rpx;
+	padding: 0 0 0 24rpx;
+}
+.label {
+	margin-right: 45rpx;
+	width: 150rpx;
+}
+.address-text,
+.number-text {
+	color: #4BAFF5;
+}
+.switch-tab {
+	background-color: #F2F2F2;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 60rpx;
+	margin: 15rpx 0;
+}
+.switch-tab .btn {
+	font-size: 34rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	height: 60rpx;
+	width: 200rpx;
+	position: relative;
+}
+.essay {
+	background-color: #FFFFFF;
+	color: #4BAFF5;
+	z-index: 2;
+}
+.recruitment {
+	background-color: #FFFFFF;
+	color: #4BAFF5;
+	z-index: 1;
+	left: -20rpx;
+}
+.selected {
+	background-color: #4BAFF5;
+	color: #FFFFFF;
+}
+.essay-container {}
+.essay-item {
+	padding: 0 24rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	position: relative;
+	margin: 8rpx 0;
+}
+.essay-item image {
+	width: 100%;
+	height: 400rpx;
+	border-radius: 15rpx;
+	z-index: 99;
+}
+.title {
+	width: 100%;
+	height: 100rpx;
+	background-color: #FFFFFF;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	white-space: nowrap;
+	position: relative;
+	bottom: 15rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	border-bottom-left-radius: 15rpx;
+	border-bottom-right-radius: 15rpx;
+}
+.title-text {
+	font-size: 32rpx;
+	padding: 10rpx 15rpx 0 15rpx;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	   text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.separate {
+	color: #7F7F7F;
+	border-left: 3rpx solid #7F7F7F;
+	margin: 0 18rpx;
+}
+.recruitment-item {
+	font-size: 28rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background-color: #FFFFFF;
+	margin: 8rpx 0;
+}
+.job-info {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	margin: 15rpx 24rpx 10rpx 24rpx;
+}
+.job-name {}
+.name {
+	font-weight: 450;
+}
+.salary {
+	color: #FF0000;
+}
+.tag {
+	margin: 0 15rpx;
+	border: #FF0000 1rpx solid;
+}
+.company-tag {
+	font-size: 26rpx;
+	color: #7F7F7F;
+	margin: 0 24rpx;
+}
+.company-welfare {
+	margin: 0 24rpx 20rpx 24rpx;
+}
+.company-welfare text {
+	font-size: 24rpx;
+	margin-right: 20rpx;
+	background-color: #FFE7BA;
+	color: #FFA500;
+	padding: 5rpx 8rpx;
+}
+

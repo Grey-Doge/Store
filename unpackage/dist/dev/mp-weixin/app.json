@@ -1,0 +1,75 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/user/myinfo",
+    "pages/shop/shoplist",
+    "pages/index/recruitment",
+    "pages/index/searchitem/searchitem",
+    "pages/demo/demo",
+    "pages/shop/license",
+    "pages/shop/register",
+    "pages/searchItemDetail/searchItemDetail",
+    "pages/publishEssay/publishEssay",
+    "pages/myPublish/myPublish",
+    "pages/common/selectCity/selectCity",
+    "pages/index/searchseller/searchseller",
+    "pages/index/recruitmentdetail/recruitmentdetail",
+    "pages/shop/review/review",
+    "pages/index/share",
+    "pages/shop/essaydetail",
+    "pages/user/collection",
+    "pages/shop/essay",
+    "pages/user/morecomment",
+    "pages/shop/shopinfo",
+    "pages/shop/moregoods",
+    "pages/user/comment",
+    "pages/user/history",
+    "pages/floors/floors"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "color": "#7F7F7F",
+    "selectedColor": "#4BAFF5",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页",
+        "iconPath": "static/tabbaricon_index.png",
+        "selectedIconPath": "static/tabbaricon_index_selected.png"
+      },
+      {
+        "pagePath": "pages/shop/shoplist",
+        "text": "商家",
+        "iconPath": "static/tabbaricon_shop.png",
+        "selectedIconPath": "static/tabbaricon_shop_selected.png"
+      },
+      {
+        "pagePath": "pages/index/recruitment",
+        "text": "广场",
+        "iconPath": "static/tabbaricon_square.png",
+        "selectedIconPath": "static/tabbaricon_square_selected.png"
+      },
+      {
+        "pagePath": "pages/user/myinfo",
+        "text": "我的",
+        "iconPath": "static/tabbarcion_me.png",
+        "selectedIconPath": "static/tabbarcion_me_selected.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "获取用户周边卖场"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap3.json"
+}

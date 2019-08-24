@@ -1,0 +1,193 @@
+
+.main-container{
+	background-color: #F2F2F2;
+	padding: 0;
+}
+.header{
+	margin-bottom: 5rpx;
+	padding: 30rpx 24rpx;
+	background-color: #FFFFFF;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.job-info{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.job-name{
+	font-weight: bold;
+}
+.salary{
+	font-size: 32rpx;
+	color: #FF0000;
+}
+.require-tag{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+.require-tag-item{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 15rpx 35rpx  15rpx 0;
+	font-size:32rpx;
+	color: #7F7F7F;
+}
+.require-tag-item image{
+	margin-right:8rpx;
+	height: 40rpx;
+	width: 40rpx;
+}
+.job-tag{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.job-tag-item{
+	padding: 0 10rpx;
+	color:#FFA500 ;
+	background: rgb(255,228,199);
+	font-size: 28rpx;
+	margin-right:15rpx;
+}
+.job-description{
+	background-color: #FFFFFF;
+	padding: 35rpx 24rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	margin-bottom: 5rpx;
+}
+.description{
+	color:#636363;
+	width: 520rpx;
+	font-size:32rpx;
+}
+.label{
+	font-size: 34rpx;
+	font-weight: 450;
+	margin-right: 40rpx;
+}
+.company-item{
+	padding:20rpx 24rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	background-color: #FFFFFF;
+	margin-bottom: 5rpx;
+}
+.address,.phone{
+	font-size:32rpx;
+	color: #4BAFF5;
+}
+.company-description{
+	font-size: 32rpx;
+}
+.company{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	background-color: #FFFFFF;
+	padding: 30rpx 24rpx;
+	margin-bottom: 5rpx;
+	font-size:28rpx;
+}
+.company image{
+	width: 180rpx;
+	height: 125rpx;
+	border-radius: 15rpx;
+	margin-right: 20rpx;
+}
+.company-info{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.name{
+	font-size: 38rpx;
+	font-weight: 450;
+}
+.company-tag{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.company-tag text{
+	background-color: #F2F2F2;
+	color: #7F7F7F;
+	padding: 5rpx 20rpx;
+	margin-right:15rpx;
+	border-radius: 15rpx;
+}
+

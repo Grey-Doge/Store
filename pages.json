@@ -1,0 +1,199 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "卖场",
+				"enablePullDownRefresh":true
+			}
+		},{
+			"path":"pages/user/myinfo",
+			"style":{
+				"navigationBarBackgroundColor":"#4BAFF5",
+				"navigationBarTitleText":"我的"
+			}
+		},{
+			"path":"pages/shop/shoplist",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"卖场",
+				"enablePullDownRefresh":true
+			}
+		},{
+			"path":"pages/index/recruitment",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"广场",
+				"enablePullDownRefresh":true
+			}
+		},{
+		    "path" : "pages/index/searchitem/searchitem",
+		    "style":{
+		    	"navigationBarBackgroundColor":"#FFFFFF",
+		    	"navigationBarTitleText":"搜索"
+		    }
+		},{
+		    "path" : "pages/demo/demo",
+		    "style" : {}
+		},{
+			"path": "pages/shop/license",
+			"style": {
+				"navigationBarTitleText": "店铺入驻"
+			}
+		},{
+			"path": "pages/shop/register",
+			"style": {
+				"navigationBarTitleText": "店铺入驻"
+			}
+		},{
+		    "path" : "pages/searchItemDetail/searchItemDetail",
+		    "style" : {
+				"navigationBarTitleText": "搜索"
+			}
+		},
+		{
+		    "path" : "pages/publishEssay/publishEssay",
+		    "style" : {
+				"navigationBarTitleText":"发布文章"
+			}
+		},
+		{
+		    "path" : "pages/myPublish/myPublish",
+		    "style" : {
+				"navigationBarTitleText":"我的发布"
+			}
+		},
+		{
+		    "path" : "pages/common/selectCity/selectCity",
+		    "style" : {
+				"navigationBarTitleText": "城市选择"
+			}
+		},
+		{
+		    "path" : "pages/index/searchseller/searchseller",
+		    "style":{
+		    	"navigationBarBackgroundColor":"#FFFFFF",
+		    	"navigationBarTitleText":"附近卖场"
+		    }
+		}
+		,
+		{
+			"path":"pages/index/recruitmentdetail/recruitmentdetail",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"招聘"
+			}
+		},
+		
+		{
+		    "path" : "pages/shop/review/review",
+		    "style" : {"navigationBarTitleText": "店铺入驻"}
+		},
+		{
+			"path": "pages/index/share",
+			"style": {
+				"navigationBarTitleText": "分享有礼"
+			}
+		},
+		{
+			"path":"pages/shop/essaydetail",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"文章"
+			}
+		},
+		{
+			"path":"pages/user/collection",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"我的收藏"
+			}
+		},
+		{
+			"path":"pages/shop/essay",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"手机"
+			}
+		},
+		{
+			"path":"pages/user/morecomment",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"更多评论"
+			}
+		},
+		{
+			"path":"pages/shop/shopinfo",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"商家详情"
+			}
+		},
+		{
+			"path":"pages/shop/moregoods",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"更多商品"
+			}
+		},
+		{
+			"path":"pages/user/comment",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"我的评论"
+			}
+		},
+		{
+			"path":"pages/user/history",
+			"style":{
+				"navigationBarBackgroundColor":"#FFFFFF",
+				"navigationBarTitleText":"历史记录"
+			}
+		}
+		
+        ,{
+            "path" : "pages/floors/floors",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"backgroundColor": "#FFFFFF",
+		"color": "#7F7F7F",
+		"selectedColor": "#4BAFF5",
+		"borderStyle": "white",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "主页",
+				"iconPath":"static/tabbaricon_index.png",
+				"selectedIconPath":"static/tabbaricon_index_selected.png"
+			},
+			{
+				"pagePath": "pages/shop/shoplist",
+				"text": "商家",
+				"iconPath":"static/tabbaricon_shop.png",
+				"selectedIconPath":"static/tabbaricon_shop_selected.png"
+			},
+			{
+				"pagePath": "pages/index/recruitment",
+				"text": "广场",
+				"iconPath":"static/tabbaricon_square.png",
+				"selectedIconPath":"static/tabbaricon_square_selected.png"
+			},
+			{
+				"pagePath": "pages/user/myinfo",
+				"text": "我的",
+				"iconPath":"static/tabbarcion_me.png",
+				"selectedIconPath":"static/tabbarcion_me_selected.png"
+			}
+
+
+		]
+	}
+}
